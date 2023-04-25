@@ -1,0 +1,15 @@
+app:
+  name: test-demo-app
+  namespace: test-demo-app-dev
+  cluster: .apps.cluster-xxxxx.xxxxx.sandbox123.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/openshift-tigerteam/test-demo-app
+  org: openshift-tigerteam
+  name: test-demo-app
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test-demo-app-dev/test-demo-app
+  tag: latest
